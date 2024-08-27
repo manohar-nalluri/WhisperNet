@@ -4,7 +4,7 @@ import { fetchFriends } from '../features/friends/store/friendsSlice';
 import { createOffer } from './webRTC';
 import { createConnection } from '../features/chatting/store/connectionStateSlice';
 
-const SOCKET_SERVER_URL = "http://localhost:8000";
+const SOCKET_SERVER_URL = import.meta.env.VITE_SOCKET_SERVER_URL 
 
 
 export const getSocket = () => {
